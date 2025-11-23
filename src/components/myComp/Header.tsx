@@ -1,3 +1,4 @@
+import { Marquee } from "../ui/marquee";
 import TypingText from "../ui/shadcn-io/typing-text";
 
 function Header() {
@@ -24,6 +25,13 @@ function Header() {
             variableSpeed={{ min: 100, max: 200 }}
           />
         </div>
+      </div>
+      <div className="w-full h-52" >
+        <Marquee pauseOnHover className="[--duration:20s]">
+          {Array.from({ length: 9 }).map((_, i) => (
+            <img key={i} className="h-16 w-16" src={`${i+1}.png`} />
+          ))}
+        </Marquee>
       </div>
     </>
   );

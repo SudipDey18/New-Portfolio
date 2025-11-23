@@ -26,8 +26,8 @@ function Projects() {
         {/* Blog */}
         <div className="w-full border-b-4 flex justify-center">
           <div className="w-[90%] border-x-4 flex flex-col sm:flex-row gap-4">
-            <img src="blog.png" alt="" className="min-w-[60%] border-r-4" />
-            <div className="w-full mt-4 flex flex-col gap-2 sm:h-full max-sm:pl-4">
+            <img src="blog.png" alt="" className="min-w-[60%] sm:border-r-4 in-l-image" />
+            <div className="w-full mt-4 flex flex-col gap-2 sm:h-full max-sm:pl-4 in-r-image">
               <p
                 style={{ fontFamily: "'Jersey 25',sans-serif" }}
                 className="text-3xl text-center text-orange-500"
@@ -66,8 +66,10 @@ function Projects() {
         {/* WP */}
         <div className="w-full border-y-4 flex justify-center">
           <div className="w-[90%] border-x-4 flex flex-col sm:flex-row-reverse gap-4">
-            <img src="wp.png" alt="" className="min-w-[60%] border-r-4 " />
-            <div className="w-full mt-4 flex flex-col gap-2 sm:h-full pl-4">
+            <div className="min-w-[60%] flex  justify-center bg-gray-900 sm:border-l-4 in-r-image">
+              <img src="wp.gif" alt="" className="min-w-[20%] max-w-75" />
+            </div>
+            <div className="w-full mt-4 flex flex-col gap-2 sm:h-full pl-4 in-l-image">
               <p
                 style={{ fontFamily: "'Jersey 25',sans-serif" }}
                 className="text-3xl text-center text-orange-500"
