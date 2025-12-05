@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
 import { Sheet, SheetContent, SheetHeader, SheetTrigger } from "../ui/sheet";
-import { FaNetworkWired, FaHandsHelping } from "react-icons/fa";
+import { FaNetworkWired} from "react-icons/fa";
 import { GiSkills } from "react-icons/gi";
 import { HiOutlineMenuAlt1 } from "react-icons/hi";
 import { ImProfile } from "react-icons/im";
-import { LiaChalkboardTeacherSolid } from "react-icons/lia";
+// import { LiaChalkboardTeacherSolid } from "react-icons/lia";
 
 function NavBar() {
   const [open, setOpen] = useState(false);
@@ -44,24 +44,25 @@ function NavBar() {
           >
             Projects
           </a>
-          <p
+          {/* <p
             className="md:text-[120%] text-[100%] text-center font-extrabold hover:-translate-y-0.5 hover:border-amber-400 hover:border-b-3 active:border-green-500 active:border-b-4"
             style={{ fontFamily: "'Architects Daughter', cursive" }}
           >
             Education
-          </p>
-          <p
+          </p> */}
+          <a
+            href="#skills"
             className="md:text-[120%] text-[100%] text-center font-extrabold hover:-translate-y-0.5 hover:border-amber-400 hover:border-b-3 active:border-green-500 active:border-b-4"
             style={{ fontFamily: "'Architects Daughter', cursive" }}
           >
             Skills
-          </p>
-          <p
+          </a>
+          {/* <p
             className="md:text-[120%] text-[100%] text-center font-extrabold hover:-translate-y-0.5 hover:border-amber-400 hover:border-b-3 active:border-green-500 active:border-b-4"
             style={{ fontFamily: "'Architects Daughter', cursive" }}
           >
             Connect
-          </p>
+          </p> */}
         </div>
         <div className="mr-10 md:w-20 w-14 border-x-4 h-16 flex items-center justify-center">
           <p className="md:text-[210%] text-[140%] text-center font-extrabold cursor-not-allowed rotate-12">
@@ -93,7 +94,7 @@ function NavBar() {
                       style={{
                         fontFamily: "'Architects Daughter', cursive",
                       }}
-                      onClick={()=>setOpen(false)}
+                      onClick={() => setOpen(false)}
                     >
                       About
                     </a>
@@ -106,12 +107,12 @@ function NavBar() {
                       style={{
                         fontFamily: "'Architects Daughter', cursive",
                       }}
-                      onClick={()=>setOpen(false)}
+                      onClick={() => setOpen(false)}
                     >
                       Projects
                     </a>
                   </div>
-                  <div className="flex gap-2 items-center justify-center">
+                  {/* <div className="flex gap-2 items-center justify-center">
                     <LiaChalkboardTeacherSolid size={18} color="blue" />
                     <p
                       className="md:text-[120%] text-[100%] text-center font-extrabold hover:border-amber-400 hover:border-b-3"
@@ -121,7 +122,7 @@ function NavBar() {
                     >
                       Education
                     </p>
-                  </div>
+                  </div> */}
                   <div className="flex gap-2 items-center justify-center">
                     <GiSkills size={18} color="red" />
                     <p
@@ -133,7 +134,7 @@ function NavBar() {
                       Skills
                     </p>
                   </div>
-                  <div className="flex gap-2 items-center justify-center">
+                  {/* <div className="flex gap-2 items-center justify-center">
                     <FaHandsHelping size={18} color="orange" />
                     <p
                       className="md:text-[120%] text-[100%] text-center font-extrabold hover:border-amber-400 hover:border-b-3"
@@ -143,7 +144,7 @@ function NavBar() {
                     >
                       Connect
                     </p>
-                  </div>
+                  </div> */}
                 </div>
               </SheetHeader>
             </SheetContent>
